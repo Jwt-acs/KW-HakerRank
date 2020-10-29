@@ -1,0 +1,6 @@
+{
+    "message1":{"type":"sms","from":"santhosh","msg":"Hi Node","to":"teacher","date":"2020-10-29","id":1},
+    "message2":{"type":"tweet","from":"krish","msg":"Hi Node","to":"nani","date":"2020-10-29","id":2},
+    "message3":{"type":"sms","from":"raghu","msg":"Hi Node","to":"dargl","date":"2020-10-29","id":3},
+    "message4":{"type":"tweet","from":"mahesh","msg":"Hi Node","to":"kanishk","date":"2020-10-29","id":4}
+  }

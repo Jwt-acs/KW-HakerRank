@@ -1,0 +1,10 @@
+{
+    "message" : {
+        "type": "sms",
+        "from" : "mohit",
+        "msg" : "hi am ur twee",
+        "to" : "teacher",
+        "id": 324214
+    }
+ }
+ 
