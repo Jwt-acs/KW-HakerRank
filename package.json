@@ -4,7 +4,6 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    
     "start": "nodemon server.js",
     "pretest": "npm install",
     "test": "./node_modules/.bin/mocha test"
