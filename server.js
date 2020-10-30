@@ -4,20 +4,32 @@ var fs = require("fs");
 const dataPath = './data/store.json';
 const addsms = './data/send.json';
 
+app.get('/',function(req,res){
+   
+   res.json({"error" : false, "message" : "Hello !"});
+   throw new Error('BROKEN')
+ });
 app.get('/:id', function (req, res) {
     // First read existing messages.
+    try {
     fs.readFile(dataPath, 'utf8', function (err, data) {
       var messages = JSON.parse( data );
       var message = messages["message" + req.params.id] 
       console.log( message );
       res.end( JSON.stringify(message));
+     // next(err)
    });
+   throw new Error('BROKEN')
+    } catch (err) {
+    console.error();
+    }
 })
 
 
 app.post('/sendMessage', function (req, res) {
     // First read existing users.
-    
+    try {
+      
    let date_ob = new Date();
 
    // current date
@@ -45,8 +57,13 @@ app.post('/sendMessage', function (req, res) {
       fs.writeFile("./data/message"+" "+todaydate +".json", JSON.stringify(array), 'utf-8', function(err) {
          res.end( JSON.stringify(array));   })
    // }
+      //next(err)
       });
       });
+      throw new Error('BROKEN')
+    } catch (err) {
+    console.error();
+    }
    })
 
 var server = app.listen(8081, function () {

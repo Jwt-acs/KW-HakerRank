@@ -15,7 +15,6 @@
     "chai-as-promised": "^7.1.1",
     "chai-http": "^3.0.0",
     "jsonfile": "^3.0.1",
-    "mocha": "^3.5.3",
     "mocha-junit-reporter": "^1.13.0",
     "mocha-multi-reporters": "^1.1.4",
     "express": "~4.16.1",
@@ -23,6 +22,9 @@
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "mocha": "^3.5.3",
+    "nodemon": "^2.0.4",
+    "should": "^13.2.3",
+    "supertest": "^6.0.0"
   }
 }
